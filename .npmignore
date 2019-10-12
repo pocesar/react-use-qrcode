@@ -1,0 +1,14 @@
+target
+wasm
+example
+*.log
+.cache
+crate
+dist
+tsconfig.json
+Cargo.toml
+Cargo.lock
+rust.d.ts
+tsconfig.tsbuildinfo
+fix_worker_path.js
+*.tgz

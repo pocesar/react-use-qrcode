@@ -1,0 +1,63 @@
+{
+  "name": "react-use-qrcode",
+  "version": "1.0.0",
+  "description": "React hook that allows you to decode QR Code data in a webworker (through comlink) using ZXing",
+  "main": "lib/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "test": "echo \"no tests\"",
+    "build": "tsc -p .",
+    "example": "parcel serve --port 443 --https --no-hmr example/index.html",
+    "pack": "parcel build --experimental-scope-hoisting --no-cache src/index.ts",
+    "prepublishOnly": "npm run build && node fix_worker_path.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pocesar/react-use-qrcode.git"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "react hook",
+    "qrcode",
+    "reader",
+    "decoder",
+    "worker",
+    "zxing",
+    "webworker",
+    "web worker",
+    "comlink"
+  ],
+  "author": "Paulo Cesar <https://github.com/pocesar>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pocesar/react-use-qrcode/issues"
+  },
+  "homepage": "https://github.com/pocesar/react-use-qrcode#readme",
+  "peerDependencies": {
+    "react": ">=16.9",
+    "react-dom": ">=16.9",
+    "comlink": ">=4.0.5",
+    "@types/react": ">=16.9",
+    "@types/react-dom": ">=16.9"
+  },
+  "optionalDependencies": {
+    "webrtc-adapter": "^7.3.0"
+  },
+  "dependencies": {
+    "@vardius/react-user-media": "^1.0.1",
+    "@zxing/library": "^0.15.2",
+    "react-use-comlink": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.5",
+    "@types/node": "^12.7.12",
+    "@types/react-dom": "^16.9.1",
+    "@babel/core": "^7.6.4",
+    "comlink": "^4.0.5",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "typescript": "next",
+    "parcel-bundler": "^1.12.4"
+  }
+}
