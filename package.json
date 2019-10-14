@@ -1,6 +1,6 @@
 {
   "name": "react-use-qrcode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook that allows you to decode QR Code data in a webworker (through comlink) using ZXing",
   "main": "lib/index.js",
   "source": "src/index.ts",

@@ -64,7 +64,9 @@ function useQrCode(options: MediaTrackConstraints) {
     const notify = () => {
       //console.log('notify')
       if (assignedCanvas && video) {
-        let context = assignedCanvas.getContext('2d')
+        let context = assignedCanvas.getContext('2d', {
+          alpha: false // should never have alpha from camera, boosts performance a bit
+        })
 
         if (context) {
           context.drawImage(video, 0, 0)
