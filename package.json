@@ -1,6 +1,6 @@
 {
   "name": "react-use-qrcode",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "React hook that allows you to decode QR Code data in a webworker (through comlink) using ZXing",
   "main": "lib/index.js",
   "source": "src/index.ts",
@@ -40,21 +40,22 @@
     "react-dom": ">=16.9",
     "comlink": ">=4.0.5",
     "@types/react": ">=16.9",
-    "@types/react-dom": ">=16.9"
+    "@types/react-dom": ">=16.9",
+    "react-use-comlink": "^2.0.0"
   },
   "optionalDependencies": {
     "webrtc-adapter": "^7.3.0"
   },
   "dependencies": {
     "@vardius/react-user-media": "^1.0.1",
-    "@zxing/library": "^0.15.2",
-    "react-use-comlink": "^1.0.0"
+    "@zxing/library": "^0.15.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.9",
     "@types/node": "^12.11.2",
     "@types/react-dom": "^16.9.2",
     "@babel/core": "^7.6.4",
+    "react-use-comlink": "^2.0.0",
     "comlink": "^4.0.5",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

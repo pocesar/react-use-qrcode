@@ -38,6 +38,7 @@ Run `npm run example` on the root then open `https://localhost` (accept the self
 * Need to always pass in a number width / height to the hook, can't use percentages or `vh`/`vw` (doesn't mean you can't stretch the `<video>` element itself)
 * Not tested on non-evergreen browsers (IE, Opera, Samsung Browser, etc)
 * `webrtc-adapter` might be needed for some weird browsers
+* [react-use-comlink](https://github.com/pocesar/react-use-comlink) is a peer dep, install manually
 
 ## License
 
